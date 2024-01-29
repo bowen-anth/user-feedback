@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>User Feedback</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="blue-container"></div>
+      <p class="feedback">Give feedback</p>
+      <p class="question">
+        What do you think of the search experience with Jira projects?
+      </p>
+      <form action="" id="form">
+        <div class="rating-wrapper">
+          <input type="radio" id="1" data-attribute="1" name="rating" />
+          <label for="1">
+            <div class="rating-container">
+              <img
+                class="smiley-image"
+                width="24px"
+                height="auto"
+                src="https://img.icons8.com/cotton/64/sad.png"
+                alt="terrible rating"
+              />
+              <p class="rating-p">Terrible</p>
+            </div>
+          </label>
+        </div>
+        <div class="rating-wrapper">
+          <input type="radio" id="2" data-attribute="2" name="rating" />
+          <label for="2">
+            <div class="rating-container">
+              <img
+                class="smiley-image"
+                width="24px"
+                height="auto"
+                src="https://img.icons8.com/parakeet/48/sad.png"
+                alt="bad rating"
+              />
+              <p class="rating-p">Bad</p>
+            </div>
+          </label>
+        </div>
+        <div class="rating-wrapper">
+          <input type="radio" id="3" data-attribute="3" name="rating" />
+          <label for="3">
+            <div class="rating-container">
+              <img
+                class="smiley-image"
+                width="24px"
+                height="auto"
+                src="https://img.icons8.com/color/48/neutral-emoticon--v1.png"
+                alt="neutral rating"
+              />
+              <p class="rating-p">Neutral</p>
+            </div>
+          </label>
+        </div>
+        <div class="rating-wrapper">
+          <input type="radio" id="4" data-attribute="4" name="rating" />
+          <label for="4">
+            <div class="rating-container">
+              <img
+                class="smiley-image"
+                width="24px"
+                height="auto"
+                src="https://img.icons8.com/fluency/48/happy.png"
+                alt="good rating"
+              />
+              <p class="rating-p">Good</p>
+            </div>
+          </label>
+        </div>
+        <div class="rating-wrapper">
+          <input type="radio" id="5" data-attribute="5" name="rating" checked />
+          <label for="5">
+            <div class="rating-container">
+              <img
+                class="smiley-image"
+                width="24px"
+                height="auto"
+                src="https://img.icons8.com/color/48/smiling.png"
+                alt="amazing rating"
+              />
+              <p class="rating-p">Amazing</p>
+            </div>
+          </label>
+        </div>
+        <p class="reasons-p">What are the main reasons for your rating?</p>
+        <textarea
+          name="message"
+          rows="3"
+          cols="40"
+          placeholder="Enter your message here..."
+          class="textarea"
+        ></textarea>
+        <div class="checkbox-container">
+          <input type="checkbox" class="checkbox" id="checkbox-1" />
+          <label for="checkbox-1">
+            <p>
+              I may be contacted about this feedback.
+              <a href="#">Privacy Policy</a>
+            </p>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" class="checkbox" id="checkbox-2" />
+          <label for="checkbox-2">
+            <p>
+              I'd like to help by joining the
+              <a href="#">Research Group.</a>
+            </p>
+          </label>
+        </div>
+        <div class="button-container">
+          <button class="button submit">Submit</button>
+          <button class="button cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
